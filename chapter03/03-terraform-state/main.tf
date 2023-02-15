@@ -51,7 +51,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 terraform {
   backend "s3" {
     bucket = "terraform-state-acperez"
-    key = "global/s3/terraform.tfstate"
+    key = "chapter03/03-isolation-via-file-layout/staging/services/data-stores/mysql/terraform.tfstate"
     region = "eu-west-1"
 
     dynamodb_table = "terraform-state-acperez-locks"
